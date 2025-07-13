@@ -1,26 +1,45 @@
 body {
-  font-family: sans-serif;
-  text-align: center;
-  background: #f9f9f9;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  gap: 10px;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-.cell {
-  background: #007bff;
-  color: white;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #001f3f;
   padding: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
+  text-align: center;
 }
 
-.cell:hover {
-  background: #0056b3;
+h1 {
+  color: #001f3f;
+  margin-bottom: 30px;
+}
+
+#grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+button.ramo {
+  background-color: #001f3f;
+  color: #fff;
+  border: 2px solid #001a33;
+  padding: 12px 15px;
+  border-radius: 8px;
+  min-width: 200px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  opacity: 0.5;
+}
+
+button.ramo:hover {
+  background-color: #003366;
+}
+
+button.ramo.active {
+  opacity: 1;
+}
+
+button.ramo.approved {
+  background-color: #00bfff;
+  border-color: #0077b6;
+  color: white;
 }
